@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+
+.no-bullets {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+
+}
+
+.custom-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.img-div{
+
+    align-items: center; /* Vertically centers the card */
+    background-image: url('GettyImages-Schiffer-Fuchs-Doris-Lessing.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+}
+
+header, footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    padding: 10px;
+    width: 100vw;
+}
+
+
+footer {
+    align-items: center;
+} 
+
+
+.radial-card {
+    position: absolute;
+    top: 40%; 
+    left: 80%; 
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.radial-card p {
+    font-family: 'Juana', serif;
+    font-size: 1.5em;
+}
+
+.card-content {
+    text-align: center;
+    color: lightgray;
+    position: absolute;
+}
+
+.info-all {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.4;
+    
+}
+
+.info1, .info2, .info3 {
+    width: 70%;
+    align-content: center;  
+}
+
+.info1, .info3 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+
+.books{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 35px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.books h2 {
+    padding-bottom: 35px;
+}
+
+
+
+
+
+
