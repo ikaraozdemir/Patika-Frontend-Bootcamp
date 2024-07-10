@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-stone-200">
+    <header>
+        <nav class="container flex flex-row mx-auto my-5 p-2 bg-stone-50">
+            <div class="flex-1">
+            <img class="w-12" src="./cat_logo.jpeg" alt="cat logo">
+            </div>
+            <ul class="flex flex-row gap-4 items-center">
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a class="bg-purple-600 px-2 py-1.5 text-white rounded-md" role="button" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container grid grid-cols-2 mx-auto gap-2 ">
+      <div class=" bg-stone-50 place-content-center">
+
+        <div class="border border-4 mx-auto">
+          <p class=" mb-1 text-center text-md text-purple-600   border border-4">
+            Mamba design system
+          </p>
+          <p class=" mb-3 text-center text-4xl font-bold border border-4">
+            Build it with Mamba 
+          </p>
+
+          <form class="max-w-sm mx-auto place-content-stretch">
+            <div class="mb-5">
+             
+              <input type="name" id="name" class="bg-slate-50 border border-stone-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Your Name" required />
+            </div>
+            <div class="mb-5">
+              <input type="email" id="email" class="bg-slate-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Email Address" required />
+            </div>
+            <div class="flex items-start mb-5">
+              <div class="flex items-center h-5">
+                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+              </div>
+              <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+            </div>
+            <button type="submit" class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center ">Join the waitlist</button>
+          </form>
+
+        </div>
+        
+
+        
+
+        
+      </div>
+      <div class=" ">
+        <img  src="./door.jpeg" alt="door">
+      </div>
+    </div>
+
+  
+</body>
+</html>
