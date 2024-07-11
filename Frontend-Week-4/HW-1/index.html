@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans bg-stone-200">
+<body class="font-sans bg-stone-200 md:px-8">
     <header>
-        <nav class="container flex flex-row mx-auto my-5 p-2 bg-stone-50">
+        <nav class="container flex flex-row mx-auto mt-5 mb-10 p-2 bg-stone-50">
             <div class="flex-1">
             <img class="w-12" src="./cat_logo.jpeg" alt="cat logo">
             </div>
@@ -20,17 +20,18 @@
         </nav>
     </header>
     
-    <div class="container grid grid-cols-2 mx-auto gap-2 ">
-      <div class=" bg-stone-50 place-content-center">
-
-        <div class="border border-4 mx-auto">
-          <p class=" mb-1 text-center text-md text-purple-600   border border-4">
+    <div class="container flex flex-col md:flex-row mx-auto md:gap-2 mt-15 mb-24">
+      <div class="flex flex-col justify-center content-center mx-auto bg-stone-50 mb-3 h-auto">
+        <div class="mx-auto p-4">
+          <p class=" mb-1 text-center text-md text-purple-600">
             Mamba design system
           </p>
-          <p class=" mb-3 text-center text-4xl font-bold border border-4">
+          <h1 class=" mb-3 text-center text-4xl font-bold">
             Build it with Mamba 
+          </h1>
+          <p class=" mb-5 text-center text-md ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium culpa necessitatibus ut.
           </p>
-
           <form class="max-w-sm mx-auto place-content-stretch">
             <div class="mb-5">
              
@@ -39,27 +40,125 @@
             <div class="mb-5">
               <input type="email" id="email" class="bg-slate-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Email Address" required />
             </div>
-            <div class="flex items-start mb-5">
+            <div class="flex items-start mb-3">
               <div class="flex items-center h-5">
                 <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
               </div>
               <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
             </div>
-            <button type="submit" class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center ">Join the waitlist</button>
+            <button type="submit" class="w-full text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm w-auto px-5 py-2.5 text-center ">Join the waitlist</button>
           </form>
-
         </div>
-        
-
-        
-
-        
       </div>
-      <div class=" ">
-        <img  src="./door.jpeg" alt="door">
+      <div class="mx-auto ">
+        <img  src="./door.jpeg" alt="door" class="overflow-hidden h-auto">
       </div>
     </div>
+    <div>
+      <p class=" mt-5 mb-2 text-center text-md text-purple-600  ">
+        HOW IT WORKS
+      </p>
+      <p class=" mb-5 text-center text-4xl font-bold">
+        Building with Mamba is simple
+      </p>
+    </div>
+    <div class="container flex flex-cols-3 mx-auto gap-2 my-24">
+      <div class="flex-1 bg-slate-50 py-4">
+        <div>
+          <div class=" inline-block w-9 h-9  bg-purple-600 rounded-full p-1 mx-4 my-2 text-white font-bold text-center">1</div>
+          <p class="px-4 font-medium">
+           <b>Lorem</b>  ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <div class="flex-1 bg-slate-50 py-4">
+        <div>
+          <div class=" inline-block w-9 h-9  bg-purple-600 rounded-full p-1 mx-4 my-2 text-white font-bold text-center">2</div>
+          <p class="px-4 font-medium">
+           <b>Adipisicing</b> elit tempora vel ipsum aliquid!    
+          </p>
+        </div>
+      </div>
+      <div class="flex-1 bg-slate-50 py-4">
+        <div>
+          <div class=" inline-block w-9 h-9  bg-purple-600 rounded-full p-1 mx-4 my-2 text-white font-bold text-center">3</div>
+          <p class="px-4 font-medium">
+           <b>Ullam</b> adipisci porro id qui, omnis quae dolor cupiditate in pariatur.  
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container flex flex-col md:flex-row mx-auto gap-2 mt-15 mb-24">
 
+
+      <div class="container flex flex-col md:flex-row mx-auto gap-2 mt-15 mb-24">
+        <div class="flex-1 mb-3 h-full">
+          <img src="./city_night.jpeg" alt="door" class="object-cover h-full w-full">
+        </div>
+        <div class="flex-1 h-full">
+          <div class="relative overflow-hidden h-full">
+            <div class="carousel flex transition-transform duration-300 text-center items-center h-full">
+              <div class="carousel-item min-w-full bg-slate-50 items-center py-5 px-10 flex flex-col justify-center h-full">
+                <img src="https://via.placeholder.com/50x50" alt="" class="bg-gray-300 rounded-full mb-5">
+                <p>
+                  <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit."</i> 
+                </p>
+                <p class="font-thin text-sm mt-3">
+                  Leroy Jenkins <br> CEO of Company Co.
+                </p>
+              </div>
+              <div class="carousel-item min-w-full bg-slate-50 items-center py-5 px-10 flex flex-col justify-center h-full">
+                <img src="https://via.placeholder.com/50x50" alt="" class="bg-gray-300 rounded-full mb-5">
+                <p>
+                  <i>"Ipsa, in quis! Esse nulla assumenda ipsa quasi vel explicabo ullam accusantium non vero beatae."</i> 
+                </p>
+                <p class="font-thin text-sm mt-3">
+                  Leroy Jenkins <br> CEO of Company Co.
+                </p>
+              </div>
+              <div class="carousel-item min-w-full bg-slate-50 items-center py-5 px-10 flex flex-col justify-center h-full">
+                <img src="https://via.placeholder.com/50x50" alt="" class="bg-gray-300 rounded-full mb-5">
+                <p>
+                  <i>"Voluptas debitis obcaecati molestias, maxime ratione labore, doloremque asperiores modi? Corrupti, ad voluptatem."</i> 
+                </p>
+                <p class="font-thin text-sm mt-3">
+                  Leroy Jenkins <br> CEO of Company Co.
+                </p>
+              </div>
+            </div>
+            <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2"><</button>
+            <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2">></button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.querySelector('.carousel');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        let currentIndex = 0;
   
+        function updateCarousel() {
+          const offset = -currentIndex * carousel.clientWidth;
+          carousel.style.transform = `translateX(${offset}px)`;
+        }
+  
+        prevButton.addEventListener('click', function () {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        });
+  
+        nextButton.addEventListener('click', function () {
+          if (currentIndex < carousel.children.length - 1) {
+            currentIndex++;
+            updateCarousel();
+          }
+        });
+      });
+    </script>
 </body>
 </html>
