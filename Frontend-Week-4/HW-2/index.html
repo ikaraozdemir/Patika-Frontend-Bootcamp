@@ -6,7 +6,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/65383533c9.js" crossorigin="anonymous"></script>
 </head>
-<body class="font-sans bg-stone-100 md:px-8">
+<body class="flex flex-col font-sans bg-gray-300 md:px-8 ">
     <header>
         <nav class="flex flex-row justify-between mx-auto mb-10 p-2 bg-stone-50 h-full py-5">
             <ul class="flex flex-row gap-4 items-center">
@@ -34,22 +34,70 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col justify-center py-6">
+    <div class="grid grid-col justify-items-center py-6 bg-stone-100">
         <h1 class="font-semibold text-2xl mb-16">What our customers are saying about us</h1>
-        <div class="flex">
-            <div class="bg-slate-50 pt-10 border border-4 text-center flex flex-col">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-28 mb-10">
+            <div class="bg-slate-50 pt-10 text-center flex flex-col w-96 shadow shadow-lg rounded-md">
                 <p class="px-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde qui corrupti alias. Nemo, earum.</p> 
                 <img class="rounded-full self-center" src="https://via.placeholder.com/50x50" alt="">
-                <p class="bg-purple-600 font-semibold text-white mt-1 pb-10 pt-5">Magni Molestiae <br> <span class="font-thin self-center">TEMPORE UTEUM</span></p>
+                <p class="bg-purple-600 font-semibold text-white mt-1 pb-10 pt-5 shadow shadow-b-lg rounded-b-lg">Magni Molestiae <br> <span class="font-thin self-center">TEMPORE UTEUM</span></p>
             </div>            
-            <div class="bg-slate-50 pt-10 border border-4 text-center flex flex-col">
+            <div class="bg-slate-50 pt-10 text-center flex flex-col w-96 shadow shadow-lg rounded-md">
                 <p class="px-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde qui corrupti alias. Nemo, earum.</p> 
                 <img class="rounded-full self-center" src="https://via.placeholder.com/50x50" alt="">
-                <p class="bg-purple-600 font-semibold text-white mt-1 pb-10 pt-5">Magni Molestiae <br> <span class="font-thin self-center">TEMPORE UTEUM</span></p>
-            </div>  
-
+                <p class="bg-purple-600 font-semibold text-white mt-1 pb-10 pt-5 shadow shadow-b-lg rounded-b-lg">Magni Molestiae <br> <span class="font-thin self-center">TEMPORE UTEUM</span></p>
+            </div>     
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-28 mb-10">
+            <div class="bg-slate-50 pt-10 text-center flex flex-col w-96 shadow shadow-lg rounded-md">
+                <p class="px-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde qui corrupti alias. Nemo, earum.</p> 
+                <img class="rounded-full self-center" src="https://via.placeholder.com/50x50" alt="">
+                <p class="bg-purple-600 font-semibold text-white mt-1 pb-10 pt-5 shadow shadow-b-lg rounded-b-lg">Magni Molestiae <br> <span class="font-thin self-center">TEMPORE UTEUM</span></p>
+            </div>             
+            <div class="bg-slate-50 pt-10 text-center flex flex-col w-96 shadow shadow-lg rounded-md">
+                <p class="px-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde qui corrupti alias. Nemo, earum.</p> 
+                <img class="rounded-full self-center" src="https://via.placeholder.com/50x50" alt="">
+                <p class="bg-purple-600 font-semibold text-white mt-1 pb-10 pt-5 shadow shadow-b-lg rounded-b-lg">Magni Molestiae <br> <span class="font-thin self-center">TEMPORE UTEUM</span></p>
+            </div>     
         </div>
     </div>
+    <div class="flex justify-center self-center bg-stone-100 mt-10 mb-24 w-2/4 py-14">
+        <div class="w-3/5">
+            <h1 class="font-bold text-3xl mb-4 self-start">Contact us</h1>
+            <form action="">
+                <label for="fname" >Name</label><br>
+                <input class="w-full mt-1 mb-3"  type="text" id="fname" name="fname" placeholder="Your name"><br>
+                <label for="email">Email</label><br>
+                <input class="w-full mt-1 mb-3"  type="text" id="email" name="email" placeholder="Your email"><br>
+                <label for="message">Message</label><br>
+                <input class="w-full mt-1 mb-3"  type="text" id="message" name="message" placeholder="Message..."><br><br>
+                <input class="bg-purple-600 px-2 py-1.5 text-white rounded-sm w-full" type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+
+    <nav class="flex flex-col lg:flex-row justify-between px-32 pb-12 font-semibold">
+        <div>
+            <ul class="flex flex-row gap-5">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex flex-row gap-4">
+                <li class="bg-purple-600 text-white rounded-full px-3 py-2"><a href="#"><i class="fa-brands fa-instagram text-xl"></i></a></li>
+                <li class="bg-purple-600 text-white rounded-full px-3 py-2"><a href="#"><i class="fa-brands fa-pinterest text-xl"></i></a></li>
+                <li class="bg-purple-600 text-white rounded-full px-3 py-2"> <a href="#"><i class="fa-brands fa-twitter text-xl"></i></a> </li>
+                <li class="bg-purple-600 text-white rounded-full px-3 py-2"> <a href="#"><i class="fa-brands fa-facebook text-xl"></i></a> </li>
+                <li class="bg-purple-600 text-white rounded-full px-3 py-2"> <a href="#"><i class="fa-brands fa-google text-xl"></i></a> </li>
+            </ul>
+        </div>
+    </nav> 
+
 
 
 </body>
