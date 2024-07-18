@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Play Your Dream Song
+    </h1>
+    <div class="drum-container" style="display: flex; justify-items: center;">
+        <img src="./drum.png" alt="drum">
+    </div>
+    <div class="button-container">
+        <button type="button" id="button"  data-sound="sound1" data-key="A" class="play-button">A</button>
+        <button type="button" id="button"  data-sound="sound2" data-key="S" class="play-button">S</button>
+        <button type="button" id="button"  data-sound="sound3" data-key="D" class="play-button">D</button>
+        <button type="button" id="button"  data-sound="sound4" data-key="F" class="play-button">F</button>
+        <button type="button" id="button"  data-sound="sound5" data-key="G" class="play-button">G</button>
+        <button type="button" id="button"  data-sound="sound6" data-key="H" class="play-button">H</button>
+        <button type="button" id="button"  data-sound="sound7" data-key="J" class="play-button">J</button>
+        <button type="button" id="button"  data-sound="sound8" data-key="K" class="play-button">K</button>
+        <button type="button" id="button"  data-sound="sound9" data-key="L" class="play-button">L</button>
+
+    </div>
+    <audio id="sound1" src="./drum-audio/boom.wav"></audio>
+    <audio id="sound2" src="./drum-audio/clap.wav"></audio>
+    <audio id="sound3" src="./drum-audio/hihat.wav"></audio>
+    <audio id="sound4" src="./drum-audio/kick.wav"></audio>
+    <audio id="sound5" src="./drum-audio/openhat.wav"></audio>
+    <audio id="sound6" src="./drum-audio/ride.wav"></audio>
+    <audio id="sound7" src="./drum-audio/snare.wav"></audio>
+    <audio id="sound8" src="./drum-audio/tink.wav"></audio>
+    <audio id="sound9" src="./drum-audio/tom.wav"></audio>
+
+    <script src="./js/drum.js"></script>
+</body>
+</html>
