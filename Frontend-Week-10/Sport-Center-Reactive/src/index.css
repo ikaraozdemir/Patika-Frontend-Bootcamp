@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+  --primary-color:#355592;
+  --secondary-color:#F39C12;
+  --font-color-1:  #fefefe;
+  --font-color-2:rgb(78, 78, 78);
+  --background-color-white:#FFFFFF;
+  --background-color-gray:#F6F6F6;
+  --background-color-blue:#F1F8FF;
+  --background-color-black:#000000;
+  --border-color:rgb(243, 156, 18);
+  --border-radius: 3px;
+}
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  color: var(--font-color-1);
+  background-color: var(--font-color-1);
+}
+section {
+  padding: 20px;
+}
+
+footer {
+  padding-top: 20px;
+  background-color: var(--primary-color);
+  color: var(--font-color-1);
+}
+
+.blue-button {
+  background-color: var(--primary-color);
+  color: var(--font-color-1);
+  border-color: var(--primary-color);
+  margin: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}
+
+.orange-button {
+  background-color: var(--secondary-color);
+  color: var(--font-color-1);
+  border-color: var(--secondary-color);
+  margin: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}
+
+.link-button {
+  background:transparent;
+  color: var(--font-color-1);
+  border-color: var(--font-color-1);
+  margin: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+  margin-bottom: 40px;
+}
+
+.divider {
+  width: 6em;
+  height: 0.5em;
+  background-color:var(--secondary-color);
+  margin-bottom: 20px;
+  justify-self: center;
+  border-radius: 50px;
+}
+
+.section-title h2 {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: var(--font-color-2);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 600px;
+}
+

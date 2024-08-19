@@ -1,0 +1,138 @@
+.bmi {
+    padding: 40px 0;
+    background-color: var(--background-color-white);
+    display: flex;
+    justify-content: center;
+}
+
+.bmi .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 10px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+
+.bmi-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.bmi-info h2 {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.bmi-info p {
+    color: var(--font-color-2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.bmi-inputs {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.1em;
+}
+
+.bmi-inputs .input {
+    display: flex;
+}
+
+
+.bmi-inputs h6 {
+    color: var(--font-color-2);
+    font-weight: 500;
+    align-self: self-end;
+    padding: 0;
+    margin-right: 0.8em;
+}
+
+.bmi-inputs input {
+    width: 9em;
+    height: 2em;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid var(--font-color-2);
+    border-radius: var(--border-radius);
+    font-size: 16px;
+}
+
+.bmi-display {
+    flex: none;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+
+#bmi-image, #bmi-chart, #bmi-title {
+    width: 100%;
+    max-width: 600px;
+  }
+
+
+  .arrow-container::before {
+    position: absolute;
+    bottom: -20px;
+    width: 18px;
+    height: 18px;
+    background-color:var(--secondary-color);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 1;
+    content: "";
+    left: var(--arrow-position, -1%);
+    transition: left 0.4s ease;
+}
+
+.bmi-display h3 {
+    color: var(--font-color-2);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bmi-display img {
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 576px) {
+    .bmi-info {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+    }
+    .bmi .container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+    .bmi-info h2 {
+        font-size: 1.5em;
+    }
+    
+    .bmi-inputs {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 10px;
+        gap: 1em;
+        align-self: flex-start;
+    }
+    .bmi-inputs input {
+        width: 100%;
+    }
+}

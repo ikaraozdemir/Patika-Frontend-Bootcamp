@@ -1,0 +1,11 @@
+/* @import url(./index.css); */
+@import url(./components/Bmi/Bmi.css);
+@import url(./components/Classes/Classes.css);
+@import url(./components/Contact/Contact.css);
+@import url(./components/Footer/Footer.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Hero/Hero.css);
+@import url(./components/Info/Info.css);
+@import url(./components/Purchase/Purchase.css);
+@import url(./components/Review/Review.css);
+@import url(./components/Trainers/Trainers.css);
