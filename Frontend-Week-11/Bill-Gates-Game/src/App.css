@@ -44,14 +44,14 @@ h1{
 }
 
 .products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.7rem;
-  
-  
+  width: 100%; 
 }
 
 .product {
+  flex-grow:1 ;
   padding: 1.5rem 0;
   background-color: white;
 }
@@ -110,4 +110,62 @@ h1{
 .buy {
   background-color: #25C484;
   color: white;
+}
+
+.receipt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding:1rem 0;
+  margin-top: 0.7rem;
+}
+.receipt-container {
+  width: 40%;
+}
+
+.receipt-container ul {
+  padding: 0;
+}
+
+.receipt li {
+  list-style-type: none;
+}
+
+.receipt-items{
+  display: flex;
+}
+
+.receipt-name {
+  font-weight: 700;
+  flex: 2;
+  text-align: start;
+}
+
+.receipt-count {
+  font-weight: 700;
+  flex: 1;
+  text-align: start;
+}
+
+.receipt-price {
+  color:#25C484;
+  font-weight: 700;
+  flex: 1;
+  text-align: end;
+}
+
+.payment {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 1.2em;
+
+}
+
+.total-payment {
+  color: #25C484;
+
 }
