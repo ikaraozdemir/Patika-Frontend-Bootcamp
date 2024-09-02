@@ -57,10 +57,10 @@ h1{
 }
 
 .product img {
-  width: 150px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   object-fit:contain;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .product-controls input {
