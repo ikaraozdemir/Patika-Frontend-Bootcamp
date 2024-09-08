@@ -14,7 +14,7 @@ export default function ShipCard({ship}) {
         sx={{borderRadius:6 }}
           component="img"
           height="140"
-          image ="/public/images/ship.jpeg"
+          image ="/ship.jpeg"
           alt="ship"
         />
         <CardContent>
