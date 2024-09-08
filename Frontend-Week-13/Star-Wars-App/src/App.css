@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.img {
+  width: 180px;
+  height: 360px;
+}
+
+.ship-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+button,input {
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 8px;
+
+}
+
+input {
+  background-color: rgb(188, 187, 187);
+  border: none;
+  color: black;
+}
+
+button{
+  background-color: rgb(128, 0, 187);
+  border-color: rgb(146, 145, 145);
+  color: lightgray;
+  width: 6rem;
+}
+
