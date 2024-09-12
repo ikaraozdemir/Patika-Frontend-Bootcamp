@@ -1,0 +1,159 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --note-color-pink:rgba(240, 98, 147, 1);
+  --note-color-purple:rgba(186, 104, 200, 1);
+  --note-color-yellow:rgba(255, 213, 78, 1);
+  --note-color-blue:rgba(79, 196, 247, 1);
+}
+
+.note {
+  background-color: gainsboro;
+  padding: 20px;
+  width: 560px;
+  border-radius: 8px;
+}
+
+.search {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: none;
+  padding: 8px 24px;
+  font-size: medium;
+  outline: none;
+  color: lightslategray;
+  font-family: inherit;
+}
+
+.search:focus {
+  border-inline: solid gray;
+}
+.search::placeholder {
+  font-family: inherit;
+  color: rgb(186, 186, 186);
+  font-weight: 400;
+}
+
+.add-note {
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+
+.input-text {
+  background-color: whitesmoke;
+  width: 90%;
+  height: 120px;
+  resize: none;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: gray;
+  font-weight: 600;
+  padding: 10px;
+  font-family: inherit;
+}
+
+.input-text::placeholder {
+  font-family: inherit;
+  color: rgb(186, 186, 186);
+  font-weight: 400;
+}
+
+.input-text:focus {
+  border: none;
+}
+
+.input-bottom {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 10px;
+}
+
+.color-tag {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pink {
+  background-color: rgba(240, 98, 147, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purple {
+  background-color: rgba(186, 104, 200, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yellow {
+  background-color: rgba(255, 213, 78, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blue {
+  background-color: rgba(79, 196, 247, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green {
+  background-color: rgba(174, 213, 129, 1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: bold;
+  color: rgb(115, 115, 115);
+  display: none;
+}
+
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+  padding-left: 20px;
+  justify-content: left;
+}
+
+.note-detail {
+  color: gray;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+
